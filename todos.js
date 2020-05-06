@@ -11,7 +11,7 @@ function renderTodos() {
     var todoElement = document.createElement('li');
     var todoText = document.createTextNode(todo);
 
-    var linkElement = document.createElement('a');
+    var linkElement = document.createElement('button');
 
     linkElement.setAttribute('href', '#');
 
@@ -32,12 +32,19 @@ function renderTodos() {
 renderTodos();
 
 function addTodo() {
+
   var todoText = inputElement.value;
 
-  todos.push(todoText);
-  inputElement.value = '';
-  renderTodos();
-  saveToStorage();
+  if (todoText.length == 0) {
+    alert('Você tentou salvar um ToDo vazio ! Digite um ToDo e tente novamente !')
+
+  } else {
+
+    todos.push(todoText);
+    inputElement.value = '';
+    renderTodos();
+    saveToStorage();
+  }
 }
 
 buttonElement.onclick = addTodo;
