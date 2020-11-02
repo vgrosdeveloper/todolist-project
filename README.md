@@ -61,7 +61,7 @@
 --- 
 
 <h3 align = "center">
-<a href = "http://linkedin.com/in/valter-guilherme-reis-de-oliveira-santos-44a7851a0">Acessar meu LinkedIn </a> 
+<a href = "http://linkedin.com/in/vgrosdeveloper">Acessar meu LinkedIn </a> 
 </h3>
 
 ---
